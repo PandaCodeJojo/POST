@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2) do
 
   create_table "posts", force: :cascade do |t|
     t.integer "user_id"
-    t.string "input"
     t.string "title"
+    t.string "input"
   end
 
   create_table "users", force: :cascade do |t|
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2) do
     t.string "gender"
     t.string "display_name"
     t.string "email"
+    t.string "password"
   end
 
 end

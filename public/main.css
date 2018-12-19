@@ -3,3 +3,63 @@ h1 {
   font-family: sans-serif;
 }
 
+#signup{
+  width: 1500px;
+  height: 700px;
+  background-color: #f0f2ef;
+  border: solid #6d696a 1.2px ;
+  opacity: 75%;
+  position: relative;
+  left: 450px;
+  top: 200px;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#line1, #line2, #line3{
+  display: inline-block;
+  
+ 
+}
+#line1 input, #line2 input, #line3 input {
+margin-right: 150px;
+}
+#line2, #line3{
+  margin-top: 30px;
+}
+#line1{
+  margin-top: 40px;
+}
+input{
+  height: 45px;
+  width: 300px;
+  font-size:30px;
+  text-align: center;
+}
+::placeholder{
+position:relative;
+font-size: 30px;
+text-align: center;
+
+}
+#signup p{
+  position: relative;
+  margin-top: 30px;
+}
+.btn{
+  height: 80px;
+  width: 300px;
+  background-color: #bdd358;
+  border-radius: 25px;
+  box-shadow: 100px #6d696a;
+  font-size: 40px;
+}
+#cancelbtn{
+  background-color: orangered;
+}
+.btn:hover{
+  background-color: black;
+  color:white;
+}
