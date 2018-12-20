@@ -1,9 +1,9 @@
 class CreatePosts < ActiveRecord::Migration[5.0]
     def up
         create_table :posts do |t|
-            t.integer :user_id
             t.string :title
-            t.string :input
+            t.string :content
+            t.references :user
              end 
     end 
 

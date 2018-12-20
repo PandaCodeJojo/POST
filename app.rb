@@ -25,6 +25,7 @@ ActiveRecord::Base.establish_connection(
 
 register Sinatra::Reloader
 enable :sessions
+set :port, 2222
 
 get '/' do
   erb :index
@@ -36,10 +37,28 @@ end
 
 post '/user/signup' do
   new_user = User.create(first_name: params['first_name'] , last_name:params['last_name'], display_name:params['display_name'], email:params['email'], gender:params['gender'], password:params['password'])
+  session[:user_id] = new_user.id
   redirect '/'
-
 end
 
 get '/login' do
   erb :login
+end
+
+post 'login' do
+  user= User.find_by(email: params['email'], password: params['password'])
+  if user
+    puts user
+    session[ :user_id] =user.id
+    #redirect to blog
+  else
+    redirect '/'
+  end
+get '/share' do
+  erb :create_post
+end
+
+post '/share' do
+  new_post= Post.create(title: params['title'] , content: params['content'], user_id: session[:user_id])
+  redirect '/'
 end
