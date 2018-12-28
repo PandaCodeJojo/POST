@@ -52,13 +52,37 @@ post 'login' do
     session[ :user_id] =user.id
     #redirect to blog
   else
-    redirect '/'
+    redirect '/allowed'
   end
+end
+
+get '/allowed' do
+  @post=Posts.all
+  erb :main_page
+end
+
+post '/allowed' do
+  user= User.find_by(email: params['email'], password: params['password'])
+  if user
+    puts user
+    session[ :user_id] =user.id
+  else
+    redirect '/profile'
+  end
+end
+
+    get '/profile' do
+  @user=User.find(session[:user_id])
+  erb :profile
+end
+
+
+
 get '/share' do
   erb :create_post
 end
 
 post '/share' do
-  new_post= Post.create(title: params['title'] , content: params['content'], user_id: session[:user_id])
-  redirect '/'
+  new_post= Posts.create(title: params['title'] , content: params['content'], user_id: session[:user_id])
+  redirect '/allowed'
 end

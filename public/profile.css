@@ -1,0 +1,21 @@
+#profilePic {
+    position: relative;
+    margin-top: 50px;
+    left: 800px;
+
+}
+#profilePic img{width:200px;
+    height: 200px;
+border-radius: 50%;}
+#profilePic h3{ 
+    position: relative;
+    left: 50px;
+.nav{
+    display: inline-block;
+    background-color: black;
+}
+
+.posts img{width: 500px;
+    height: 400px;
+
+}

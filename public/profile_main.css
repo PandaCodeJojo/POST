@@ -1,0 +1,60 @@
+body{
+  margin-right: 100px;
+  margin-left: 100px;
+  }
+  .headerWrapper{
+  height:200px;
+  margin-top:0px;
+  position:absolute;
+  top:0;
+  }
+
+.headerWrapper img{ height: 300px;
+position:relative;
+top: -90px;}
+.nav{
+  width: 80%;
+  height: 30px;
+  position: relative;
+  margin-left: 110px;
+  top: 100px;
+}
+.nav ul  {
+text-decoration: none;
+color: white;
+position: relative;
+}
+.naver{
+display: inline;
+}
+.nav ul li h4 a{
+  display: inline;
+}
+#firstpost img{height:200px;
+  width: 300px;
+  image-resolution: snap;}
+
+  
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: hotpink;
+  font-size: 200%;
+}
+
+a:active {
+  color: white;
+  background-color: black;
+  font-size: 125%;
+  text-decoration: none;
+}
