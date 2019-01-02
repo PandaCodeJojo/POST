@@ -27,7 +27,7 @@ else
   adapter: 'sqlite3',
   database: 'db/development.db'
 )
-
+end
 register Sinatra::Reloader
 enable :sessions
 set :port, 2222
@@ -76,7 +76,7 @@ post '/allowed' do
   end
 end
 
-    get '/profile' do
+ get '/profile' do
   @user=User.find(session[:user_id])
   erb :profile
 end

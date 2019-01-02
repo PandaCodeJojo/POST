@@ -19,5 +19,5 @@ else
   adapter: 'sqlite3',
   database: 'db/development.db'
 )
-
+end
 # do stuff to store initial data
