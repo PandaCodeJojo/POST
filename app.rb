@@ -30,7 +30,7 @@ else
 end
 register Sinatra::Reloader
 enable :sessions
-set :port, 2222
+
 
 get '/' do
   erb :landing
