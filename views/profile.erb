@@ -26,5 +26,22 @@
             <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa soluta libero, dignissimos in hic inventore eligendi explicabo assumenda animi vel nihil id nisi perspiciatis nemo ab laudantium? Natus, quisquam obcaecati!</p>
         </div>
       </div>
+      <% @posts.reverse.each do |posts|
+          <div>
+            <p>
+              <%= posts.username %>
+            </p>
+          </div>
+          <div>
+            <h2>
+              <%= posts.title %>
+            </h2>
+          </div>
+          <div>
+            <p>
+              <%= posts.input %>
+            </p>
+          </div>
+        <% end %>
     </body>
     </html>

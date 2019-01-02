@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 2) do
 
   create_table "posts", force: :cascade do |t|
+    t.integer "user_id"
     t.string "title"
     t.string "content"
-    t.integer "user_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2) do
     t.string "display_name"
     t.string "email"
     t.string "password"
+    t.string "birthday"
   end
 
 end

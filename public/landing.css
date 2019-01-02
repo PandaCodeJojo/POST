@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+html {
+    background-color: #160F29;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: montserrat;
+}
+#logo {
+    color: #F7F4EA;
+    font-size: 60px;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    letter-spacing: 3px;
+}
+header {
+    background-color: darkgrey;
+    height: 15%;
+    margin-bottom: 0;
+}
+.logo h1 {
+    position: relative;
+    left: 50%;
+    top: 50px;
+    overflow: hidden;
+    
+}
+
+main {
+    position: relative;
+    text-align: center;
+   top: 170px;
+    margin-bottom: 25%;
+    background-color: #0E273C;
+    height: 600px;
+}
+
+main h2 {
+    position: relative;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    top: 150px;
+    color: #DFE0E2;
+    
+   
+}
+
+main h3 { 
+    position: relative;
+    top: 150px;
+    color:#DFE0E2;
+    
+}
+
+
+
+#buttons {
+    position: relative;
+    top: 220px;
+   
+   
+}
+.btn {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #0E273C;
+    letter-spacing: 2px;
+    height:60px;
+    width: 250px;
+    border-radius: 25px;
+   border: none;
+    box-shadow: 5px 8px #160F29;
+    background-color: #3DDC97;
+    outline: #EF6461;
+    cursor: pointer;
+    
+    
+}
+.btn:hover {
+    font-size: 150%;
+    letter-spacing: 4px;
+    color: #F7F4EA;
+    outline: none;
+    box-shadow: 3px 3px #F7F4EA;
+    
+}

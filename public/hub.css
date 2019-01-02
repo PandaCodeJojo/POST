@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+html {
+    background-color: #160F29;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: montserrat;
+}
+#logo {
+    color: #F7F4EA;
+    font-size: 60px;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    letter-spacing: 3px;
+}
+#menu {
+    position: absolute;
+    left: 90%;
+    top: 50px;
+    height: 60px;
+    width: 80px;
+}
+
+main {
+    position: relative;
+    text-align: center;
+    top: 170px;
+    margin-bottom: 2%;
+    background-color: #0E273C;
+    height: 900px;
+}
+    
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 30px;
+    position: absolute;
+    right: 200px;
+    top: 80px;
+    color: #F7F4EA;
+    letter-spacing: 2px;
+    
+    
+}
+
+ul li {
+   position: relative;
+   margin-right:15px;
+
+}
+
+
+
+
+ul li a {
+    text-decoration: none;
+    color: #F7F4EA;
+    cursor: pointer;
+}
+ul li a:active{
+    background-color: #0E273C;
+}
+ul li a:hover {
+    background-color: #000000;
+    font-size: 110%;
+    height: 110%;
+}

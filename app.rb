@@ -28,7 +28,7 @@ enable :sessions
 set :port, 2222
 
 get '/' do
-  erb :index
+  erb :landing
 end
 
 get '/signup' do
@@ -42,7 +42,7 @@ post '/user/signup' do
 end
 
 get '/login' do
-  erb :login
+  erb :logins
 end
 
 post 'login' do
@@ -76,7 +76,9 @@ end
   erb :profile
 end
 
-
+get '/hub' do
+  erb :hub
+end
 
 get '/share' do
   erb :create_post
