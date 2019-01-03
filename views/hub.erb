@@ -5,39 +5,26 @@
 <link rel="stylesheet" type="text/css" href="hub.css">
 </head>
 <body>
-    <div id="logo">
-        <h1>POST</h1>
-    </div>
     
-    <div  class="nav">
- 
-  <ul>
-    <li><a href="/share"> Create Post</a></li>
-    <li><a href="/profile">My Profile</a></li>
-    <li><a href="/hub">Hub</a></li>
-    <li id="out"><a href="#">Sign Out</a></li>
-  </ul>
-  
-</div>
-
+    
+    
     <main>
-    <% @posts.reverse.each do |posts|
-        <div>
-          <p>
-            <%= posts.username %>
-          </p>
-        </div>
-        <div>
-          <h2>
-            <%= posts.title %>
-          </h2>
-        </div>
-        <div>
+    <div>
+    <% @posts.reverse.each do |posts| %>
+        
+          <h2><%= posts.username%></h2>
+          
+            
+          <h3><%= posts.title %></h3>
+          
+      
           <p>
             <%= posts.content %>
           </p>
-        </div>
+        
+      
       <% end %>
+      </div>
     </main>
 
     <script type="text/javascript src="hub.js">

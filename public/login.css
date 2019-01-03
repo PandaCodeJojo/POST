@@ -45,7 +45,7 @@ main {
     font-weight: bolder;
     letter-spacing: 2px;
     position: relative;
-    left: 50px;
+    left: 25px;
     color: #DFE0E2;
     
 }
@@ -58,7 +58,7 @@ main {
     width: 250px;
     height: 200px;
     position: relative;
-    left: 440px;
+    left: 750px;
     text-align: center;
 }
 input {

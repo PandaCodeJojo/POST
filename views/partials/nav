@@ -1,0 +1,10 @@
+<div  class="nav">
+ 
+  <ul>
+    <li><a href="/share"> Create Post</a></li>
+    <li><a href="/profile">My Profile</a></li>
+    <li><a href="/hub">Hub</a></li>
+    <li id="out"><a href="#">Sign Out</a></li>
+  </ul>
+  
+</div>

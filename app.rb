@@ -62,7 +62,7 @@ post 'login' do
 end
 
 get '/allowed' do
-  @post=Posts.all
+  @post=Post.all
   erb :main_page
 end
 
@@ -82,14 +82,18 @@ end
 end
 
 get '/hub' do
+  @users= User.all 
+  @posts= Post.all
   erb :hub
 end
+
+
 
 get '/share' do
   erb :create_post
 end
 
 post '/share' do
-  new_post= Posts.create(title: params['title'] , content: params['content'], user_id: session[:user_id])
-  redirect '/allowed'
+  new_post= Post.create(title: params['title'] , content: params['content'], user_id: session[:user_id])
+  redirect '/hub'
 end

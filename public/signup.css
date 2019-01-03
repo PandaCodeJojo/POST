@@ -31,7 +31,7 @@ main {
     
     margin-bottom: 25%;
     background-color: #0E273C;
-    height: 800px;
+    height: 80%;
     top: 120px;
 }
 
@@ -71,7 +71,7 @@ input {
     border: 0;
     outline: 0;
     border-bottom: 3px solid #F7F4EA;
-    color: #F7F4EA;
+    color: black;
     margin-top: 30px;
 }
 
@@ -112,19 +112,9 @@ input {
 
 }
 
-#loginbtn{
-    width: 250px;
-    margin-right: 20px;
-    position: relative;
-    left: 35px;
-    font-size: 30px;
-    color: #0E273C;
-    background-color: #3DDC97;
-}
-#loginbtn:hover {
-    font-size: 200%;
-    letter-spacing: 4px;
-    
-    outline: none;
-    box-shadow: 3px 3px #F7F4EA;
+#signup {
+    width: 80%;
+    height: 700px;
+    top: -10px;
+    left: 80px;
 }
